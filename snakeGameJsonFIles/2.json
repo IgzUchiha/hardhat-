@@ -1,0 +1,17 @@
+{
+    "name" : "Harambe",
+    "description": "Harambe is a short, pudgy, Monkey who set out to rescue a boy the rest is history",
+    "image" : "https://ipfs.io/ipfs/QmWAjoqy9hxyQX8BZESny6Q4auedFJ5GsGDgdYrsqmUaEe/11.png",
+    "attributes": [
+        {
+            "trait_type": "Strength",
+            "value": 7,
+            "max_value": 10
+        },
+        {
+            "trait_type": "Speed",
+            "value": 6,
+            "max_value": 10
+        }
+    ]
+}

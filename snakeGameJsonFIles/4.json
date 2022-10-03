@@ -1,0 +1,23 @@
+{
+    "name" : "Champion",
+    "description": "Woah champ slow down there you have unlcoked an attribute that no other has",
+    "image" : "https://ipfs.io/ipfs/QmWAjoqy9hxyQX8BZESny6Q4auedFJ5GsGDgdYrsqmUaEe/33.png",
+    "attributes": [
+        {
+            "trait_type": "Strength",
+            "value": 7,
+            "max_value": 10
+        },
+        {
+            "trait_type": "Speed",
+            "value": 6,
+            "max_value": 10
+        },
+        {
+            "trait_type": "Intelligence",
+            "value": 9,
+            "max_value": 10
+        }
+    ]
+}
+

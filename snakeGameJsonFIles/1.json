@@ -1,0 +1,19 @@
+{
+    "name" : "Gold",
+    "description": "Classical Capatilism was backed by gold until the glassstegal act was passed and moved the classical capatilist system from gold standard to a neoclassical debting standard that has caused civil unrest acrosss the world ",
+    "image" : "https://ipfs.io/ipfs/QmWAjoqy9hxyQX8BZESny6Q4auedFJ5GsGDgdYrsqmUaEe/00-1.png",
+    "attributes": [
+        {
+            "trait_type": "Strength",
+            "value": 1,
+            "max_value": 10
+        },
+        {
+            "trait_type": "equity",
+            "value": 3,
+            "max_value": 10
+        }
+       
+      
+    ]
+}
