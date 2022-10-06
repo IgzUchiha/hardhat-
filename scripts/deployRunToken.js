@@ -7,7 +7,7 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Greeter = await hre.ethers.getContractFactory("RunToken")
+  const Greeter = await hre.ethers.getContractFactory("SlattGame")
   const greeter = await Greeter.deploy()
 
   await greeter.deployed();

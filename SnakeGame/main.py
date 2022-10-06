@@ -4,6 +4,7 @@ from food import Food
 from scoreboard import Scoreboard
 import time
 from web3 import Web3
+from wallet import Wallet
 from tkinter import *
 import webbrowser
 
@@ -19,20 +20,20 @@ print(balance)
 print(web3.eth.blockNumber)
 screen = Screen()
 screen.setup(width=700, height=700)
-screen.bgcolor("red")
+screen.bgcolor("black")
 screen.title("My SLATT Game")
 screen.tracer(0)
+# screen.create_text(300, 50, text="HELLO WORLD", fill="black", font=('Helvetica 15 bold'))
+# screen.pack()
 button = Button(text='Connect Meta Mask')
 button.config(command=click)
 button.pack()
 # webbrowser.open_new("C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s")
 webbrowser.open_new("https://metamask.io")
-
-
-
-
 snake = Snake()
 food = Food()
+wallet = Wallet('0xC5A66758501De57Cd39EC8087dc4b4BEB8Cbb117', round(web3.fromWei(balance, "ether"), 4))
+
 scoreboard = Scoreboard()
 # metaMask = MetaMask()
 
@@ -45,6 +46,11 @@ game_is_on = True
 
 while game_is_on:
     screen.update()
+    wallet.goto(300,300)
+    wallet.write(f"Balance: {wallet.balance} ETH", align='right', font="20")
+    # scoreboard.write(f"Address {wallet.address}")
+    wallet.goto(50, 300)
+    wallet.write(f"Address: {wallet.address}", align='right', font="20",)
     time.sleep(0.1)
     snake.move()
 

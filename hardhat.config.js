@@ -1,5 +1,4 @@
 
-
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
@@ -15,11 +14,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.17",
+  solidity: "0.8.4",
   networks: {
-    rinkeyby:{
-      url:process.env.Rinkeyby_RPC,
-      accounts:[process.env.PRIVATE_KEY],
+    mumbai:{
+      url: "https://rpc-mumbai.matic.today",
+      accounts:process.env.pk,
     },
   }
 };
