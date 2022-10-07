@@ -7,11 +7,11 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Greeter = await hre.ethers.getContractFactory("SlattGameCollection");
+  const Greeter = await hre.ethers.getContractFactory("SlattGame");
   const greeter = await Greeter.deploy(
-    "SlattGame",
-    "Slatt",
-    "https:/ipfs.io/ipfs/QmasvYxwuJNYUEAsQJcG2hgNHXF7jNZkzqhowG2Sdi9S6G/"
+    // "SlattGame",
+    // "Slatt",
+    // "https:/ipfs.io/ipfs/QmasvYxwuJNYUEAsQJcG2hgNHXF7jNZkzqhowG2Sdi9S6G/"
   );
 
   await greeter.deployed();
